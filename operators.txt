@@ -1,0 +1,35 @@
+Variables 
+---------
+a = 10 
+name 
+value  --> type(name) ==> type(a) 
+memory --> id(name)	  ==> id(a)
+--------------------------------------------------
+
+Data Types 
+----------
+Java --> int float double long char string boolean 
+Python --> Numbers Strings Lists Tuples Dictionaries
+
+Numbers 
+-------
+operations 
+	5 operators 
+arithmetic 
+	+
+	-
+	*
+	/
+	//
+	%
+	**
+comparision --> True/False
+	>
+	<
+	>=
+	<=
+	!=
+	==
+bitwise 
+membership
+identity

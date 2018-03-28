@@ -1,0 +1,56 @@
+PYTHON
+------
+logical --> and or not 
+return --> T/F
+
+a= 10
+a>5 and a<15 --> t
+a>5 and a<9  --> f
+a>5 or a<9   --> t
+
+4 and 5 --> ??
+5 or 10 --> ??
+
+python -> true
+
+and --> both true --> true
+	--> both false --> flase
+
+or --> any true --> true
+   --> both false --> false
+
+Bitwise Operators 
+-----------------
+Bitwise and  -> &
+Bitwise or   -> |
+Bitwise not  -> ~
+right shift  -> >>
+left shift   -> <<
+Bitwise XOR  -> ^
+
+bits and bytes 
+
+0's and 1's
+
+a. b and or
+0  0 0    0
+0  1 0    1
+1  0 0    1
+1  1 1    1
+            16 8 4 2 1
+
+10 --> 0 0 0 0 1 0 1 0
+20 --> 0 0 0 1 0 1 0 0 
+
+10&20= 0 0 0 0 0 0 0 0
+10|20= 0 0 0 1 1 1 1 0
+
+~20 --> -(20+1)
+~x --> -(x+1)
+
+XOR --> exclusively OR -> Task  
+
+10>>2
+
+
+

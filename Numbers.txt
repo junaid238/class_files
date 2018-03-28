@@ -1,0 +1,131 @@
+Python 
+------
+Variables 
+	- name (identifier)
+	- value type(a)
+	- memory id(a)
+
+identifiers and keywords 
+keywords 33 --> only be used 
+>>>import keyword
+>>>print(keyword.kwlist) 
+
+identifiers --> user defined names for vars, methods and classes 
+
+smallcase 
+no number
+no symbol
+no spaces 
+underscore --> special case 
+
+
+a = 10
+name ==> a
+value ==> 10 
+memory/location ==> ??
+type of value ==> number / int 
+
+>>> type(a)
+<class 'int'>
+>>> id(a)
+4456717200
+
+syntax 
+------
+grammar of code 
+indentation ( spacing the code )
+optional --> all languages 
+mandatory --> python
+
+>>> a = 10 
+>>> a 
+10
+
+demo.py --> ?? o/p
+
+cmd--> c:/>python demo.py
+compiling vs intrepreting 
+C CPP Java -- compiled 
+Python php -- interpreted 
+
+----
+-----
+---
+13 error
+-----
+---- 
+19 error 
+-----
+-----
+100 error
+
+compile --> 13 19 100 -->fix all-->compile-->no errors-->run-->o/p
+interpreter --> 12o/p error 13 --> fix 13 --> 18o/p error 19 --> . ---> no error --> o/p
+
+IDLE , cmd  --> python interpreter --> >>>
+editor --> sublime text --> python files -->cmd --> python file.py
+IDE --> pycharmCE --> editor + cmd
+
+Data Types 
+----------
+java ,c --> int float long double boolean char string 
+python --> numbers strings lists tuples dictionaries 
+
+independent -> numbers and strings 
+derived (collections) -> lists tuples and dictionaries
+
+status flag - boolean -> 0 1 --> True / False
+
+Task -> biggest integer ???
+
+Numbers 
+-------
+operations 
+	operators 
+		6 -->   arithmetic
+				loical   --> t/f
+				comparision --> t/f
+				bit wise 
+			Strings and collections
+				membership --> t/f
+				identity --> t/f
+Dynamically typed 
+-----------------
+java c -> int a = 10 
+a = 10
+
+arithmetic
+	7 operators
+	+
+	-
+	*
+	/
+	//
+	%
+	**
+
+int 
+25 / 7  = 3
+25 // 7 = 3
+
+float
+25.0 / 7 = 3.5143658
+25.0 // 7 = 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
