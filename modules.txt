@@ -1,0 +1,143 @@
+# # PYTHON
+# # ------
+# # mean median mode 
+
+# # python file.py 4
+# # abcd -> chars
+
+# # python file.py 3
+# # abc
+
+
+# Modules and packages 
+
+# Module:
+# -------
+# -> a python file 
+# -> demo.py --> module 
+# --> add.py --> a,b , sum()
+# --> sub.py --> c ,d , diff() , sum()
+
+# sub.py
+# ------
+# import add
+# add.sum() -> module_nmae.entity
+# print(add.a)
+
+# from add import sum()  
+# sum() -> XXX.XXX
+# print(a) --> error
+
+# from add import * --> private protected vars you cant get 
+# sum()
+# a
+# b
+
+# aliasing --> nickname of module 
+
+# allarithmeticfunctionsinonefile.py
+
+# demo.py --> import allarithmeticfunctionsinonefile
+# allarithmeticfunctionsinonefile.add()
+# allarithmeticfunctionsinonefile.sub()
+
+# import allarithmeticfunctionsinonefile as every
+# every.add()
+# every.sub()
+
+
+
+# import demo.py --> error
+
+import demo as d
+
+# d.say_hello("Hari")
+# # say_hello("Hari")
+
+# from demo import say_hello
+# say_hello("Ravi")
+
+# from demo import say_hello
+# say_hello("Ravi")
+
+# from demo import *
+# say_hello("hey")
+
+# Types 
+# -----
+# -> default predefined [print()]
+# -> imported predefined
+# 	import sys
+# 	sys.argv
+# 	os , random , datetime etc..
+# -> custom / external 
+# 	mymodule.py --> custom
+# 	n dimensional array --> import numpy as nd
+# 	import pandas as pd 
+# 	import matplotlib as plt
+
+
+# packages:
+# ---------
+# text_analytics 
+# --------------
+# module1.py
+# module2.py
+# module3.py
+# module4.py
+# text_an--> directory / folder
+
+
+# module1.py
+# module2.py
+# module3.py
+# module4.py
+# __init__.py --> empty
+# text_an--> directory / folder --> python package
+
+
+# second.py
+# ---------
+# from text_an import module4
+# module4.token()
+# module4.match()
+
+# import text_an.module3 as mn
+# mn.pattern()
+# mn.score()
+
+
+# Random Module
+# -------------
+# import random as r
+# print(dir(r))
+# print(r.random()) # random 0<i<1
+# print(r.randint(1, 20))# random integer start<=i<=end
+# l1 = [x for x in range(3,30)]
+# print(l1)
+# r.shuffle(l1) # return type NO
+# print(l1)
+# a = r.choice(l1)
+# print(a)
+
+# print(r.sample(l1, k=2))
+
+python file.py 4 
+abcd
+
+python file2.py 4 
+4598
+
+python file2.py 4 
+aDfN
+
+
+# OS module
+# ---------
+
+
+
+
+for i in listname:
+	if i not in listname2:
+		listname2.append(i)

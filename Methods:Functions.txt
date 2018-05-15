@@ -1,0 +1,57 @@
+Methods/Functions 
+-----------------
+-> snippet of code 
+-> one task
+3 imp 
+----- 
+-> definition  -> compulsory(1)
+-> implementation  -> compulsory(1)
+-> call -> optional (more)
+
+
+SYNTAX 
+-------
+def func_name(): ->definition
+	---
+	---- ---> implementation
+	---
+
+func_name()
+func_name() -> calls
+func_name()--> output 
+
+
+pre defined --> len() sort() pop()
+custom defined --> 
+
+params.      returnType
+  1.             1. --->len(param)
+  0              1. ---> .pop()
+  0              0	---> sort()
+  1              0. ---> .append(param)
+
+params -- input to a Function
+returnType -- output from a Function
+
+
+Params
+------
+1 positional 
+2 default 
+3 varibale ( extended positional )
+4 keyworded 
+
+
+
+bitwise and --> both 1s --> 1 all are zeros 
+bitwise or --> both 0s --> 0 all are ones 
+
+
+~ --> bitwise not --> 2s complement 
+
+
+
+
+
+
+
