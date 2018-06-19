@@ -1,0 +1,56 @@
+python manage.py migrate ---> add auth tables to DB 
+python manage.py crea tesuperuser ---> name pwd
+app--> templates --> app --> html
+django.conf.urls --> use url .... path view name
+python manage.py shell --> interactive shell of django
+
+python manage.py makemigrations app
+python manage.py migrate app
+
+
+urls.py --> djkp
+	 url(r'', include('kpapp.urls')),
+
+urls.py --> djkp
+from . import views
+urlpatterns = [
+    url(r'^$', views.first_post, name='first_post'),
+    url(r'demo', views.print_demo, name='print_demo'),
+]
+
+views.py --> kpapp
+from django.http import HttpResponse
+# Create your views here.
+def print_demo(request):
+    html = "<html><body>It is a demo code.</body></html>" 
+    return HttpResponse(html)
+def first_post(request):
+    return render(request, 'kpapp/first_post.html', {})
+
+admin.py ---> kpapp
+
+from .models import Post
+
+admin.site.register(Post)
+
+
+models.py --> kpapp
+
+
+class Post(models.Model):
+	#syntax my_field_name = models.CharField(max_length=20, help_text="Enter field documentation")
+    author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
+    title = models.CharField(max_length=200)
+    text = models.TextField()
+    created_date = models.DateTimeField(
+            default=timezone.now)
+    published_date = models.DateTimeField(
+            blank=True, null=True)
+
+    def publish(self):
+        self.published_date = timezone.now()
+        self.save()
+
+    def __str__(self):
+        return [self.title , self.published_date]
+
