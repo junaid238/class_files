@@ -1,0 +1,187 @@
+python - Web dev ===> django FW
+
+youtube.com --> 1 billion 
+0.016secs 
+0.23secs 
+
+java - Web dev ===> springs 
+
+bank.online.com --> 10 millions 
+2 secs
+4 secs
+
+speed vs security 
+
+Writing of Python code 
+----------------------
+single line code 
+--> IDLE (cmd of python)
+--> cmd 
+
+multi line code / python file 
+--> editor (Sublime Text)
+	demo.py
+	cmd --> C:\>python demo.py (console)
+	output 
+--> IDE 
+	-> PyCharm (CE)
+	-> Eclipse 
+	editor + console
+
+--------------------
+#numbers 
+# strings 
+XXX chars XXX
+char and string --> strings
+
+< class str >
+
+syntax:
+-------
+<identifier> = "<value>" /'<value>'
+tech = "Python"
+name / identifier --> tech 
+value / string ---> Python
+type(tech) --> < class str >
+
+- indexed
+- sliced
+- concatenated 
+- functions
+- IMMUTABLE (no modify , delete a part of it )
+- final
+
+indexing--> extract single chars  
+--------
+P  y  t  h  o  n
+0  1  2  3  4  5  --> forward indexing (0 - (n-1))
+-6 -5 -4 -3 -2 -1 --> reverse indexing (-1 - -n)
+
+<strname>[<index>]
+tech[3]
+tech[-3]
+
+slicing--> extract a part of string ( sub string )
+-------
+P  y  t  h  o  n
+0  1  2  3  4  5  --> forward indexing (0 - (n-1))
+-6 -5 -4 -3 -2 -1 --> reverse indexing (-1 - -n)
+
+<strname>[<start> : <end>] --> start to end-1 start < end
+tech[0:4] --> Pyth
+tech[-6:-2] --> Pyth
+
+<strname>[ : <end>] --> 0 to end-1 
+<strname>[<start> : ] --> start to n 
+<strname>[ : ] --> 0 to n 
+
+dia = "Python and Data sciences"
+
+tech[0:4] --> default = +1
+
+<strname>[<start> :<end> : <step>] --> start to end --> inc = +step
+
+dia[2:15:2] --> 'to n aa'
+
+reverse accessing a string start > end
+<strname>[<start> :<end> : <step>] --> step = -1
+dia[15:2:-1]
+dia[-5:-12:-1]
+<strname>[<start> :<end> : <step>] --> start to end --> dec = -step
+reverse a string
+--> dia[::-1]
+
+concatenation
+-------------
+joining 
+ --> str and str
+ --> int and str
+
++ --> aritmetic operator 
+str --> + --> concatenation operator --> str and str
+		, --> concatenation operator --> str and num ( print )
+
+name = "Technology"
+tech = "Python"
+a = 100
+name + tech
+name + a --> error 
+print(name , a)
+
+type casting  ( over all change )
+------------
+conversion of data types 
+int --> str ==> int()
+str --> int ( conditions ) ==> str() , repr()
+name + str(a)
+
+string literals (print , db query)
+---------------
+%d  , %f    , %s  --> carriers of Dts 
+int , float ,string
+
+syntax:
+-------
+khan secured 100 marks 
+print("<strLit1> <static string> <strLit2>"%(<value1> , <value2>))
+print("%s secured %d marks" % ("khan" , 100))
+
+Special , esc chars 
+-------------------
+\n (new line), \t (tab space) --> Special
+\ , % --> esc
+
+para = "fghjk
+gfhjk
+bvnm,.
+bvnm,.l"
+
+para = "dfghj \n kjhgfd \n kjhgf \n jhgf"
+
+multi line string
+-----------------
+para = ''' kjhgf
+jhgfds
+lkjhgfd
+hgfds
+kjhgfds
+hkugjyfhtg 
+'''
+multi line comments
+===================
+'''
+gfd
+iuytr
+jgdfsatrfed
+ytrewsazxcfghju
+ytfgdhjui
+'''
+
+path = "c\programs\new\technology\python"
+print(path)
+path = "c\programs\\new\\technology\python"
+print(path)
+
+dia = "I'am in a class"
+print(dia)
+dia = 'I\'am in a class'
+print(dia)
+
+khan secured 100 marks 
+khan secured 100% marks 
+print("%s secured %d %% marks" % ("khan" , 100))
+
+raw strings ( path , urls )
+-----------
+input --> xerox --> output
+XX Special esc XX
+
+rawpath = r"c\programs\new\technology\python"
+print(rawpath)
+
+unicode string --> ??
+--------------
+
+ASCII
+char --> ascii ord(char)
+ascii --> char chr(ascii)

@@ -1,0 +1,79 @@
+PYTHON
+------
+santhi , dheeraj and raj 
+
+--> what is  python ??
+	- programming language
+	- scripting language
+
+--> why python ??
+	- web app development 
+	- gui app development
+	- scripting at OS level
+	- scientific computing 
+
+web	app	development
+-------------------
+-> fb.com --> server and internet(network) --> data in server(global)
+-> build web apps --> python + framework --> django / flask
+
+--> only python          --> web app --> XXXXX
+--> python + django --> web app
+
+django -- web framework built on python 
+
+--> web app on python --> youtube.com 
+
+youtube.com --> videos --> 10 billons 
+fetching time of youtube.com --> 0.0016 sec 
+
+bank.online.com --> accounts --> 1 billion
+fetching time of bank.online.com --> 2 secs , 3secs 
+
+youtube.com vs bank.online.com 
+
+python       vs  java/.net
+more speed  --- less speed
+less secure --- more secure
+more data   --- less data
+
+java , php , ruby , angular , node . . . . 
+
+gui app development
+-------------------
+games , apps --> server , no network(internet)
+ms word , paint  --> data is local 
+billing apps(restaurants , shopping malls) -> gui , XX web XX
+
+python       --> XX gui XX 
+python + Qt4 --> gui 
+
+python GUI (Qt4) --> Maya 
+Ruby , .net 
+
+scripting 
+---------
+3 --> browser level  --> js 
+  --> server level   --> php , java , ruby , python
+  --> os level       --> python , ruby , perl 
+
+i/p --> _______ --> o/p
+
+python + OS + sys --> OS level scripting
+
+scientific computing
+--------------------
+problems --> XX web gui scripts XX 
+
+img process , data manipulation --> advance algorithms 
+data sciences , machine learning , deep learning , AI 
+
+data + logic 
+
+Python , R , MATLAB , C++
+
+
+python --> data + speed + img process
+
+
+

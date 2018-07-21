@@ -37,5 +37,6 @@ def genpwd(name):
 	
 genpwd("khan")
 genpwd("Hari")
+genpwd("Hari")
 genpwd("khan")
 

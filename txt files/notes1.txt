@@ -1,0 +1,259 @@
+Python 
+------
+Khan -- 35 hrs 
+django --  20 hrs 
+-----------------
+Python - ??
+->programming 
+->scripting 
+
+
+fb.com --> 2005 --> 0 ---> 2008 --> 100 --> programs(code)
+linux --> i/ps --> o/ps --> no modify --> script
+
+--> client script --> browser  --> js
+--> server script --> server / system (backend) --> php , java , .net .
+--> os script --> operation systems --> Python , ruby , perl . . .
+
+
+4 uses:
+------
+->web dev 
+	-> web applications (framework)
+	-> browser , network 
+	-> django , flask 
+	-> youtube.com
+->gui dev
+	-> XX network , browser XX
+	-> framework , libraries
+	-> PyQt4
+	-> billing systems , mspaint 
+->scripting
+	-> os scripting 
+	-> automation 
+->sceintific computing 
+	-> machine learning 
+	-> data sceinces 
+	-> deep learning
+
+Version 
+-------
+Python - 3.6 latest stable version
+Python - 2.7 most used stable version
+
+3.6 vs 2.7 --> changes 
+
+----------------------------------------------------------------------
+Installation 
+------------
+python.org --> 3.6 --> download 
+run--> exec --> next next ...
+
+terminal / cmd 
+--------------
+C:/>python
+
+>>> <interpreter of python>
+
+C:/>python
+error 
+C:/>where python
+-------
+
+path global --> python
+
+mycomputer -> rt click 
+--------;--------;-----;-------;
+C:/>python
+
+>>> <interpreter of python>
+-----------------------------------------------------------------------
+
+Syntax -- easy - Syntax error
+indentation -- strict - indentation error
+
+keywords and identifiers 
+------------------------
+keywords --> pre defined words by python libraries
+--> change XXX
+--> delete XXX
+--> particular purpose 
+--> 33 -3.6
+	31 -2.7
+
+C:/>python
+>>> import keyword
+>>> print(keyword.kwlist)
+['False', 'None', 'True', 'and', 'as', 'assert', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+
+identifiers -> user defined keywords
+names --> vars , functions , classes , errors . . . . 
+
+--> small case (recommended)
+--> capital case 
+--> XX symbol XX
+--> XX number XX
+--> _ and __ ( special cases )
+---------------------------------------------------------------------
+variables
+---------
+small data storage elements 
+--> data / values 
+
+	-> name 
+	-> value (type)
+	-> memory location / address
+
+name - identifier
+value - user defined
+memory - system allocation
+
+<var> = <value>
+
+type of data    --> type(<var>)
+memory location --> id(<var>)
+
+>>> a  = 100
+>>> type(a)
+<class 'int'>
+>>> id(a)
+4324775632
+
+data types
+----------
+
+all languages 
+-------------
+int
+float 
+char 
+string 
+double 
+long 
+boolean 
+
+python
+------
+number -> int , float
+string
+list
+tuple 
+dictionary 
+
+sets 
+frozen sets 
+
+2.7 --> int has a max value --> 9223372036854775807
+?? + --> Long
+
+3.6 --> int has a max value --> 9223372036854775807
+??? + --> int
+
+C:/>python
+>>>import sys
+>>>sys.maxint (2.7)
+>>>sys.maxsize (3.6) 
+
+Numbers 
+-------
+math ( module )
+	numericals
+	decimals 
+cmath ( module )
+	complex --> a+bj
+
+Operations 
+----------
+arithmetic 
+logical 
+comparision
+bitwise 
+
+identity ( XX number XX )
+membership ( XX number XX )
+
+
+arithmetic--> 7 --> value
+===============
+add +
+diff -
+mul *
+div / float quotient
+floor div // int quotient
+modulo %
+exponent ** power of
+
+logical --> 3 -> T / F
+------------- 
+and , or , not
+   or 	and
+tt t 	t
+tf t 	f
+ft t 	f
+ff f 	f
+
+t/f <ope> t/f
+
+10 and 20
+t and t --> 20 
+10 or 20 
+t --------> 10
+
+comparision --> 6 -> T / F
+------------------
+>
+<
+>=
+<=
+==
+!=
+
+bitwise operators 
+-----------------
+decimal --> binary 
+bitwise and --> &
+bitwise or  --> |
+bitwise not --> ~
+bitwise xor --> ^
+right shift 
+left shift
+
+10 ---> 00001010
+20 ---> 00010100
+
+10&20 - 00000000
+10|20 - 00011110
+
+~10 --> 11110101 XXX --> 1's complement
+~ --> 2's complement
+
+10 --> -11
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
