@@ -27,7 +27,6 @@ import os
 
 # removedirs with files SHUTIL
 
-
 # os with paths
 # -------------
 # os.path._____
@@ -36,8 +35,6 @@ import os
 # os.path.exists('path') # returns T/F 
 # os.path.join(path1 , path2 )
 # os.walk()
-
-
 
 # for paths , dirs ,files in os.walk('/Users/junaid/Desktop/newdir'):
 # 	# print(paths)
@@ -50,25 +47,10 @@ import os
 	# print(dirs)
 	# print(files)
 
+# file , ext = os.path.splitext('/Users/junaid/Desktop/class_files/osdemoSRN.py')
+# print(file)
+# print(ext)
 
-
-
-
-
-
-file , ext = os.path.splitext('/Users/junaid/Desktop/class_files/osdemoSRN.py')
-print(file)
-print(ext)
-
-
-file , ext = os.path.split('/Users/junaid/Desktop/class_files/osdemoSRN.py')
-print(file)
-print(ext)
-
-
-
-
-
-
-
-
+# file , ext = os.path.split('/Users/junaid/Desktop/class_files/osdemoSRN.py')
+# print(file)
+# print(ext)

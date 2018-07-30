@@ -226,33 +226,51 @@
 # evenSqLC = [ i**2  for i in range(2,21) if (i%2==0)]
 # print(evenSqLC)
 
-tasks
------
-expected output
----------------
-python filename.py 
-enter length of list 
-4
-enter the element 1
-enter the element 2
-enter the element 30
-enter the element 400
+# tasks
+# -----
+# expected output
+# ---------------
+# python filename.py 
+# enter length of list 
+# 4
+# enter the element 1
+# enter the element 2
+# enter the element 30
+# enter the element 400
 
-[1,2,30,400]
+# [1,2,30,400]
 
-n - gram
---------
+# n - gram
+# --------
 
-dia = "given member of the test dataset and in turn make a prediction"
+# dia = "given member of the test dataset and in turn make a prediction"
 
-enter the n 
-1 
-["given" , "member" . . . . ., "prediction"]
+# enter the n 
+# 1 
+# ["given" , "member" . . . . ., "prediction"]
 
-enter the n 
-2
-["given member" , "member of" , "of the ", ..... , "a prediction"]
+# enter the n 
+# 2
+# ["given member" , "member of" , "of the ", ..... , "a prediction"]
 
-enter the n 
-3
-["given member of " , " of the test" , , ..... , "make a prediction"]
+# enter the n 
+# 3
+# ["given member of " , " of the test" , , ..... , "make a prediction"]
+
+
+
+# l1 = [[[[[[[["a"]]]]]]]]
+# print(l1[0][0][0][0][0][0][0][0])
+
+# nList = [2,4,5,78,9,8,6,232,4,2,2,11,1,3,332,4,66,21]
+# nList.sort() # will return nothing 
+# # it will directly sort the list 
+# print(nList)
+
+# clist = ["a" , "bsjk" , "sjdgfj" ,"asda" , "ewrugif" , "zkhkv"]
+# clist.sort()
+# print(clist)
+
+# mlist = [1,2,364,3964, "dj" , "elyfy"]
+# mlist.sort()
+# print(mlist)
