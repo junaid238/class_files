@@ -452,3 +452,102 @@ a = 23
 
 # 	else:
 # 		print("wrong time ")
+
+
+
+# *
+# **
+# ***
+# ****
+# *****
+
+
+
+
+# print("*" * 1)
+# print("*" * 2)
+# print("*" * 3)
+# print("*" * 4)
+# print("*" * 5)
+
+# 1 - 5 --> range(1,6)
+
+
+# for i in range(1,6):
+# 	print("*" * i)
+
+
+
+# 1
+# 22
+# 333
+# 4444
+
+# 4444
+
+# print("1" * 1)
+# print("2" * 2)
+# print("3" * 3)
+# print("4" * 4)
+# print("5" * 5)
+
+# from 1 till 5
+
+# print("i" * i)
+
+
+# for i in range(1,6):
+# 	print(str(i) * i)
+
+
+# 12345
+
+# print(12345)
+
+
+# for i in range(1,2): # 1
+# 	print(str(i) , end = "")
+# print()
+# for i in range(1,3): # 12
+# 	print(str(i) , end = "")
+# print()
+# for i in range(1,4): # 123
+# 	print(str(i) , end = "")
+# print()
+# for i in range(1,5): # 1234
+# 	print(str(i) , end = "")
+# print()
+# for i in range(1,6): # 12345
+# 	print(str(i) , end = "")
+
+# for j in range(1,6):
+# 	for i in range(1,j+1): # j == 1 to 6
+# 		print(str(i) , end = "")
+# 	print()
+
+# 1
+# 12	
+# 123
+# 1234
+# 12345
+
+	# * --> 3 spaces + 1 stars = 4
+ #   ** --> 2 spaces + 2 stars = 4
+ #  *** --> 1 spaces + 3 stars = 4
+ # **** --> 0 spaces + 4 stars = 4
+
+   # *
+   
+
+# print(" "*3 + "*"*1)
+# print(" "*2 + "*"*2)
+# print(" "*1 + "*"*3)
+# print(" "*0 + "*"*4)
+
+# print(" "*i + "*"*j)
+# n = 10
+# for i in range(1,n+1):
+# 	print(" "*i + "*"*(n-i))
+
+# i + j = 4
+# j = 4-i

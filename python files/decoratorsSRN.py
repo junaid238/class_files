@@ -1,166 +1,166 @@
-# Python decorators
-# -----------------
-# Methods --> first class objects 
+Python decorators
+-----------------
+Methods --> first class objects 
 
-# decorator - method --> adds extra functionality to other function
+decorator - method --> adds extra functionality to other function
 
-# func 1 - dec
-# funct2 + dec --> extra functionality
+func 1 - dec
+funct2 + dec --> extra functionality
 
-# @classmethod  --> cls
-# @staticmethod --> non cls and self 
+@classmethod  --> cls
+@staticmethod --> non cls and self 
 
-# self -- default
+self -- default
 
-# def printInc(num):
-# 	return num+1
-# # a = printInc(3)
-# # print(a)
-# def printDec(num):
-# 	return num-1
-
-
-# def caller(methodname , arg):
-# 	# returning a call of first method dynamically
-# 	return methodname(arg)
-
-# print(caller(printInc , 5))
-# print(caller(printDec , 5))
+def printInc(num):
+	return num+1
+# a = printInc(3)
+# print(a)
+def printDec(num):
+	return num-1
 
 
-# nested functions / methods 
-# super function
-# 	sub1 function
-# 	sub2 function
+def caller(methodname , arg):
+	# returning a call of first method dynamically
+	return methodname(arg)
 
-# def superFunc():
-# 	print("from super function ")
+print(caller(printInc , 5))
+print(caller(printDec , 5))
 
-# 	def sub1():
-# 		print("from sub 1 function")
+
+nested functions / methods 
+super function
+	sub1 function
+	sub2 function
+
+def superFunc():
+	print("from super function ")
+
+	def sub1():
+		print("from sub 1 function")
 		
-# 	def sub2():
-# 		print("from sub 2 function")
+	def sub2():
+		print("from sub 2 function")
 
-# 	sub1()
-# 	sub2()
-# superFunc()
-
-
-# def takeNum(a):
-# 	def hi():
-# 		return ("hi from hi method sub1") 
-# 	def bye():
-# 		return ("bye from bye method sub2")
-# 	if a%2 == 0:
-# 		return hi
-# 	else:
-# 		return bye
-
-# n = takeNum(10) # n = hi not hi()
-# m = takeNum(23) # m = bye not bye()
-
-# # reference of methods 
-# print(n)
-# print(m)
-
-# # method call but n , m are not methods
-# print(n())
-# print(m())
+	sub1()
+	sub2()
+superFunc()
 
 
-# def deco(methodName):
-# 	def wrapper():
-# 		print("hello from wrapper")
-# 		methodName()
-# 		print("hello after the deoc call ")
-# 	return wrapper
-# 	# wrapper()
-# @deco
-# def numprint():
-# 	print("output from deco using @ ")
-# numprint()
+def takeNum(a):
+	def hi():
+		return ("hi from hi method sub1") 
+	def bye():
+		return ("bye from bye method sub2")
+	if a%2 == 0:
+		return hi
+	else:
+		return bye
 
-# def printNum():
-# 	print( "output from printNum method ")
+n = takeNum(10) # n = hi not hi()
+m = takeNum(23) # m = bye not bye()
 
-# printNum()
+# reference of methods 
+print(n)
+print(m)
 
-# a = deco(printNum)
-# a()
+# method call but n , m are not methods
+print(n())
+print(m())
 
-# MultiThreading
-# --------------
-# thread --> entity of a sequential execution 
-# --> time of execution
-# --> variables 
-# --> progress 
 
-# --> register set and stack 
+def deco(methodName):
+	def wrapper():
+		print("hello from wrapper")
+		methodName()
+		print("hello after the deoc call ")
+	return wrapper
+	# wrapper()
+@deco
+def numprint():
+	print("output from deco using @ ")
+numprint()
 
-# --> import threading 
+def printNum():
+	print( "output from printNum method ")
 
-# thread objects --> function call
-# t1 = funct1
-# t2 = funct2
+printNum()
 
-# syntax 
-# ------
-# t1 = threading.Thread(target = printNum)
-# t2 = threading.Thread(target = printInc)
+a = deco(printNum)
+a()
 
-# t1.start()
-# t2.start()
+MultiThreading
+--------------
+thread --> entity of a sequential execution 
+--> time of execution
+--> variables 
+--> progress 
 
-# t1 --> after t1 --> t2
+--> register set and stack 
 
-# # for waiting till t1 is completed
-# t1.join()
-# # for waiting till t2 is completed
-# t2.join()
+--> import threading 
 
-# module for wait or sleep --> time 
-# import time 
-# time.sleep(5)
+thread objects --> function call
+t1 = funct1
+t2 = funct2
 
-# import threading
+syntax 
+------
+t1 = threading.Thread(target = printNum)
+t2 = threading.Thread(target = printInc)
 
-# def prinTnum(num ):
-# 	print("the num entered is " , num)
+t1.start()
+t2.start()
 
-# def incNumPrint(num):
-# 	print("the number icremented is ", num+1)
+t1 --> after t1 --> t2
 
-# t1 = threading.Thread(target = prinTnum , args = (10 ,))
-# t2 = threading.Thread(target = incNumPrint , args =(20 ,))
+# for waiting till t1 is completed
+t1.join()
+# for waiting till t2 is completed
+t2.join()
 
-# t1.start()
-# t2.start()
+module for wait or sleep --> time 
+import time 
+time.sleep(5)
 
-# t1.join()
-# t2.join()
+import threading
 
-# Beautiful Soup --> ?? task 
+def prinTnum(num ):
+	print("the num entered is " , num)
 
-# PythonDecorators/decorator_function_with_arguments.py
-# def decorator_function_with_arguments(arg1, arg2, arg3):
-# 	def wrap(f):
-# 		print("Inside wrap()")
-# 		def wrapped_f(*args):
-# 			print(args)
-# 			print("Decorator arguments: Inside wrapped_f()", arg1, arg2, arg3)
-# 			f(*args)
-# 			print("After f(*args)")
-# 		return wrapped_f
-# 	return wrap
+def incNumPrint(num):
+	print("the number icremented is ", num+1)
+
+t1 = threading.Thread(target = prinTnum , args = (10 ,))
+t2 = threading.Thread(target = incNumPrint , args =(20 ,))
+
+t1.start()
+t2.start()
+
+t1.join()
+t2.join()
+
+Beautiful Soup --> ?? task 
+
+PythonDecorators/decorator_function_with_arguments.py
+def decorator_function_with_arguments(arg1, arg2, arg3):
+	def wrap(f):
+		print("Inside wrap()")
+		def wrapped_f(*args):
+			print(args)
+			print("Decorator arguments: Inside wrapped_f()", arg1, arg2, arg3)
+			f(*args)
+			print("After f(*args)")
+		return wrapped_f
+	return wrap
  
-# @decorator_function_with_arguments("hello", "world", 42)
-# def sayHello(a1, a2, a3, a4):
-# 	print('sayHello arguments:', a1, a2, a3, a4)
-# sayHello(10,30,48,89)
-# print("After decoration")
-# print("Preparing to call sayHello()")
-# sayHello("say", "hello", "argument", "list")
-# print("after first sayHello() call")
-# sayHello("a", "different", "set of", "arguments")
-# print("after second sayHello() call")
+@decorator_function_with_arguments("hello", "world", 42)
+def sayHello(a1, a2, a3, a4):
+	print('sayHello arguments:', a1, a2, a3, a4)
+sayHello(10,30,48,89)
+print("After decoration")
+print("Preparing to call sayHello()")
+sayHello("say", "hello", "argument", "list")
+print("after first sayHello() call")
+sayHello("a", "different", "set of", "arguments")
+print("after second sayHello() call")

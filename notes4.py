@@ -1692,3 +1692,100 @@ emp1 = Employee() # object creation
 # print(Organisation.org_name)
 
 # e1.calc(1876567 , 22)
+
+# Modules 
+# -------
+# random , math , cmath , os 
+
+# random
+# ------
+# pseudo random numbers 
+# 	- numbers 
+# 	- collection
+# Functions
+# ---------
+# Numbers
+# 	- random()
+# 	- randrange()
+# 	- randint()
+# Collection
+# 	- choice()
+# 	- sample()
+# 	- shuffle()
+
+import random 
+# random() --> float value 0<num<1
+# print(random.random())
+# randint(<start> , <end>) --> random integer b/w start and end inclusive 
+# print(random.randint(2,40)) 
+# randrange(<start> , <end>) --> random integer b/w start and end inclusive 
+# print(random.randrange(2,40)) 
+
+# l1 = [x for x in range(2,23)]
+# print(l1)
+
+# random.shuffle(<list>) --> all elements of a collection gets shuffled
+# random.shuffle(l1)
+# print(l1)
+
+#random.choice(<list>) --> one random element from a collection
+# print(random.choice(l1))
+
+#random.sample(<list> , k=<population>) --> multiple elements from a collection
+# print(random.sample(l1 , k = 2))
+
+# c:/>python randChr.py 5 
+# jdskb
+
+# c:/>python randChr.py 9 4 
+# ytgfvgkfi
+# 8673
+
+# import sys 
+# print(sys.argv)
+# count = 0
+# for i in range(0, int(sys.argv[1])+1):
+# 	count += i
+# print(count)
+
+# numbers --> ascii --> chars 
+import sys , random
+# char = ""
+# for i in range(0 , int(sys.argv[1])):
+# 	char = char + chr(random.randrange(97,122))
+# print(char)
+
+# char = ""
+# num = ""
+# for i in range(0 , int(sys.argv[1])):
+# 	char = char + chr(random.randrange(97,122))
+# print(char)
+# for i in range(0 , int(sys.argv[2])):
+# 	num = num + str(random.randrange(0,9))
+# print(num)
+
+
+# c:/>python p wdmake.py "khan"
+# dfgg9821hgvj6536
+# c:/>python pwdmake.py "Ravi"
+# jhdf7236bfjb3390
+# c:/>python pwdmake.py "khan"
+# user already exists
+
+# pwds.txt
+# khan -- dfgg9821hgvj6536
+# Ravi -- jhdf7236bfjb3390
+
+# a = 10 
+# b = 20 
+# ans = a+b
+# ans2 = a+ans 
+# with open("demo.txt" , "w") as myf:
+# 	myf.write(str(ans)+"\n")
+# 	myf.write(str(ans2))
+# # myf.close()
+# with open("demo.txt" , "r") as myfr:
+# 	listOflines = myfr.readlines()
+# 	print(listOflines)
+# 	res = int(listOflines[0][:-1]) + int(listOflines[1])
+# 	print(res)

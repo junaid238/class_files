@@ -1,10 +1,10 @@
-import pymysql
-from python_mysql_dbconfig import read_db_config
+import pymysql # importing a connector
+from python_mysql_dbconfig import read_db_config #  getting credentials
 def makeTable():
 	dbdetails = read_db_config()
 	try:
 		conn = pymysql.connect(**dbdetails)
-		if conn:
+		if conn: # True
 			print("connection is successfull")
 			cur = conn.cursor()
 			# print(cur)
